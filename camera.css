@@ -1,0 +1,167 @@
+*{
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+.vedio-cont{
+     height: 100vh;
+     width: 100vw;
+     background-color: black;
+}
+
+video {
+     height: 100%;
+     width: 100%;
+}
+
+.action-cont {
+     height: 13rem;
+     width: 5rem;
+     /* background-color: lightblue; */
+     position: absolute;
+     top: calc((100vh - 19rem) / 2);
+     right: 5rem;
+     color: rgb(14, 15, 15);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     z-index: 2;
+}
+.action-cont > * {
+     width: 100%;
+     height: 5rem;
+     border-radius: 50%;
+     
+     border: 2px solid rgb(255, 255, 255);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.record-button {
+     background-color: red;
+     height: 3rem;
+     width: 3rem;
+     border-radius:50% ;
+}
+.capture-button {
+     background-color: white;
+     height: 3rem;
+     width: 3rem;
+     border-radius:50% ;
+}
+
+.scale-record {
+     animation: scale-record 1s  infinite ;
+}
+
+.scale-capture {
+    animation: scale-capture 1s  1 ;
+}
+
+@keyframes scale-record {
+     0%{
+        transform: scale(0.0);
+     }
+   100%{
+    transform: scale(1.1);
+ }
+
+}
+
+
+@keyframes scale-capture {
+    0%{
+       transform: scale(0.0);
+    }
+  100%{
+   transform: scale(1.1);
+}
+
+}
+
+.timer-cont {
+     position: absolute;
+     bottom: 7rem;
+     left: 5rem;
+     color: #ffffff;
+     font-size: .8rem;
+     z-index: 3;
+}
+
+.timer {
+     display: none;
+}
+
+.container {
+     position: absolute;
+     top : calc((100vh - 45vh) / 2 );
+     left: 5rem;
+     height: 16rem;
+     width: 5rem;
+      background-color: white; 
+      z-index: 2;
+}
+
+.filter {
+     height: 4rem;
+     background-image: url('https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?size=626&ext=jpg&ga=GA1.1.1037392081.1662271397&semt=ais');
+
+     background-position: center;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-color: #e6141470;
+     background-blend-mode: color-burn;
+     
+
+}
+
+.orange {
+     background-color: rgba(255, 166, 0, 0.226);
+}
+
+.brown {
+     background-color: rgba(165, 42, 42, 0.336);
+}
+.pink {
+     background-color: rgba(226, 24, 57, 0.178);
+}
+
+.transprent {
+     background-color: transparent;
+}
+
+.filter-layer{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(0, 0, 0, 0.521);
+     z-index: 1;
+
+}
+
+.fa-solid{
+      color: rgb(255, 255, 255);
+      font-size: 3.4rem ;
+     
+}
+
+.galary {
+     position: absolute;
+     height: 6rem;
+     right:  6rem;
+     bottom: 7rem;
+     z-index: 2;
+
+}
+
+.galary:hover {
+      cursor: pointer;
+}

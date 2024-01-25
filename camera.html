@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="camera.css">
+</head>
+<body>
+    
+    <div class="vedio-cont">
+        <video autoplay src="" ></video>
+    </div>
+
+    <div class="action-cont">
+        <div class="record-btn-cont">
+            <div class="record-button "></div>
+        </div>
+        <div class="center-btn-cont">
+            <div class="capture-button "></div>
+        </div>
+    </div>
+
+      <div class="timer-cont">
+        <h1 class="timer"> 00.00.00 </h1>
+      </div>
+
+      <div class="container">
+        <div class="filter orange"></div>
+        <div class="filter brown"></div>
+        <div class="filter pink"></div>
+        <div class="filter transprent"></div>
+      </div>
+
+      <div class="filter-layer"> </div>
+      
+      <div>
+        <i class="fa-solid fa-floppy-disk galary"></i>
+      </div>
+      
+      
+       <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+
+
+      <script src="db.js"></script>
+
+    <script src="camera.js"></script>
+    <script>
+      let galary = document.querySelector(".galary");
+      galary.addEventListener("click" , (e) => {
+         location.assign("./gallary.html")
+      })
+    </script>
+</body>
+</html>

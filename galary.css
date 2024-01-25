@@ -1,0 +1,72 @@
+ *box{ 
+ box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+.back{
+     width: 5rem;
+     height: 5rem;
+     border-radius: 50%;
+     background-color: black;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     bottom: 4rem;
+     right: 5rem;
+}
+.back:hover{
+    cursor: pointer;
+}
+.galary-cont{
+     background-color: #dff9fb;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+       justify-content: center;
+}
+
+.media-cont{
+     
+     height: 16rem;
+     width: 15rem;
+     border: 5px solid white;
+     border-radius: 6px ;
+     margin: 2rem;
+     background-color: lightgreen;
+}
+.media {
+ height: calc(100% - 2rem - 2rem);     
+}
+
+.media > * {
+     width: 100%;
+     height: 100%;
+     object-fit: fill;
+}
+
+.download {
+     background-color: black;
+}
+
+.delete {
+     background-color: rgb(223, 43, 43);
+}
+.action-btn {
+     height: 2rem;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.action-cont:hover {
+     cursor: pointer;
+}
